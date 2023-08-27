@@ -43,7 +43,7 @@ public class FlightScheduledJob {
             }
 
             flightRepository.saveAll(Arrays.asList(flights));
-            System.out.println("Flight data fetched and saved successfully.");
+            log.info("Flight data fetched and saved successfully.");
         }
         else {
             log.info("Failed to fetch flight data.");
